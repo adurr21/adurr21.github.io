@@ -1,42 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Austin Durr - Coming Soon</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/tech-bg.mp4" type="video/mp4" /></video>
-        <!-- Masthead-->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">Website Coming Soon</h1>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Austin Durr</title>
+    <meta name="title" content="Austin Durr" />
+    <meta
+      name="description"
+      content="I am a computer science student at the University of Georgia passionate in Machine Learning and Systems Programming."
+    />
+
+    
+    <!-- Open Graph / Facebook -->
+    <!--
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://github.com/CommunityPro/portfolio-html"
+    />
+    <meta property="og:title" content="Portfolio Template - Open source" />
+    <meta
+      property="og:description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
+    />
+    <meta
+      property="og:image"
+      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
+    />
+    -->
+
+    <!-- Twitter -->
+    <!--
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://github.com/CommunityPro/portfolio-html"
+    />
+    <meta property="twitter:title" content="Portfolio Template - Open source" />
+    <meta
+      property="twitter:description"
+      content="Build or customize your portfolio website using this super easy template. Free to use if you are a member of the community or a contributor to this project"
+    />
+    <meta
+      property="twitter:image"
+      content="https://user-images.githubusercontent.com/62628408/150613011-b78a7f5a-0af1-4312-aab0-0022e7258693.png"
+    />
+  -->
+
+    <!-- Link -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+  </head>
+  <body>
+    <header id="hero">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container">
+          <!-- Logo -->
+          <h1 id="logo">
+            <a href="https://austindurr.com"
+              ><img src="./assets/logo.png" alt="Austin Durr"
+            /></a>
+          </h1>
+          <!-- Navbar links -->
+          <ul class="nav-menu">
+            <li><a class="nav-link" href="#projects">PROJECTS</a></li>
+            <li><a class="nav-link" href="https://linkedin.com/in/austin-durr">CONTACT</a></li>
+            <!-- <li><a class="nav-link" href="#">BlOG</a></li> -->
+            <li>
+              <a
+                class="nav-link btn btn-primary"
+                href="assets/Resume.pdf"
+                >RESUME <i class="fas fa-arrow-right"></i
+              ></a>
+            </li>
+
+            <!-- Toggle switch -->
+            <div class="theme-switch">
+              <input type="checkbox" id="switch" />
+              <label class="toggle-icons" for="switch">
+                <img class="moon" src="assets/moon.svg" />
+                <img class="sun" src="assets/sun.svg" />
+              </label>
             </div>
+            <!-- Hamburger menu -->
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
-        <!-- Social Icons-->
-        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="https://www.linkedin.com/in/austin-durr/"><i class="fab fa-linkedin"></i></a>
+      </nav>
+
+      <section class="header-container">
+        <img
+          class="profile-image"
+          src="assets/profile-image.svg"
+          alt=""
+        />
+        <h1>Hi, I'm Austin</h1>
+
+        <div class="content-text">
+          <h2>I'm a Computer Science Student</h2>
+          <h2>Passionate in Software Engineering and M.L.</h2>
+
+          <p>
+            I am always looking for new opportunities to learn and grow. Check out my Resume and connect with me on LinkedIn.
+          </p>
+        </div>
+        <a
+          href="https://linkedin.com/in/austin-durr"
+          class="btn btn-secondary"
+          target="_blank"
+          >Connect With Me</a
+        >
+      </section>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="project-container container">
+      <div class="division"></div>
+      <div class="content-text">
+        <h2>Projects</h2>
+        <!-- <p>Check out some of my personal projects.</p> -->
+      </div>
+
+      <article class="project">
+        <!-- Project 1 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project One</h3>
+              <p>React, Redux, SASS</p>
             </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+
+        <!-- Project 2 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Two</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Porject 3 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Three</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Four</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Five</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div href="" class="card">
+          <div class="project-info">
+            <div class="project-bio">
+              <h3>Project Six</h3>
+              <p>React, Redux, SASS</p>
+            </div>
+
+            <div class="project-link">
+              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank"><i class="fas fa-globe"></i></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <a href="#" class="btn btn-secondary"
+        target="_blank" >See More <i class="fas fa-arrow-right"></i
+      ></a>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <!-- Social links -->
+        <div class="social">
+          <!--<a href="#" target="_blank"
+            ><img src="./assets/facebook-icon.svg" alt="Facebook"
+          /></a>
+          <a href="#" target="_blank"><img src="./assets/twitter-icon.svg" alt="Twitter" /></a>
+          <a href="#" target="_blank"
+            ><img src="./assets/linkedin-icon.svg" alt="Linkedin"
+          /></a>
+          -->
+          <a href="https://github.com/adurr21" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+          <!--<a href="#" target="_blank"
+            ><img src="./assets/hashnode-icon.svg" alt="Hashnode"
+          /></a>
+          -->
+        </div>
+        <p>Austin Durr</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
