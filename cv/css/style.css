@@ -13,8 +13,7 @@ nav {
     background-color: #D3D0CB;
 }
 
-nav p, nav a {
-}
+nav p, nav a {}
 
 nav a {
     text-decoration: none;
@@ -64,7 +63,7 @@ footer svg {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 50px;
+    margin: 50px 50px 0;
 }
 
 .right-splash {
@@ -130,7 +129,7 @@ section p {
 
 .about {
     display: grid;
-    grid-template-columns: minmax(250px, .3fr) minmax(250px, .3fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, .3fr));
     font-family: "Roboto", sans-serif;
     justify-content: center;
     text-align: center;
@@ -219,8 +218,7 @@ dl dd{
     font-family: "Roboto", sans-serif;
 }
 
-form {
-}
+form {}
 
 form input, form textarea {
     width: 25%;
