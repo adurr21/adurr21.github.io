@@ -151,6 +151,7 @@ ul {
     list-style-position: inside;
     list-style-type: square;
     font-size: 1.1em;
+    padding-left: 0;
 }
 li {
     margin: 10px 0;
