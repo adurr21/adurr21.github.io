@@ -13,8 +13,6 @@ nav {
     background-color: #D3D0CB;
 }
 
-nav p, nav a {}
-
 nav a {
     text-decoration: none;
     color: #393E41;
@@ -76,6 +74,7 @@ footer svg {
 .splash h1 {
     font-family: "Quicksand", sans-serif;
     font-size: 2em;
+    color: #393E41;
 }
 
 .splash img {
@@ -134,7 +133,6 @@ section p {
     justify-content: center;
     text-align: center;
     gap: 10px;
-    /* margin-left: .33fr; */
 }
 
 /* link styles */
@@ -175,11 +173,21 @@ dl dd{
 /* Project Section */
 .three-col {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
+    grid-template-columns: minmax(250px, 500px) minmax(250px, 500px) minmax(250px, 500px);
     justify-content: center;
     gap: 15px;
     margin-left: 100px;
     margin-right: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    .three-col {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .card {
+        max-width: 500px;
+    }
 }
 
 .card {
@@ -217,8 +225,6 @@ dl dd{
     text-align: center;
     font-family: "Roboto", sans-serif;
 }
-
-form {}
 
 form input, form textarea {
     width: 25%;
