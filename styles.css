@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+#three-container {
+    width: 100%;
+    height: 600px;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-blue {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
