@@ -5,11 +5,13 @@ import cityModel from './assets/model/Little City.glb';
 // ThreeJS
 
 const scene = new three.Scene();
-const camera = new three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
 
 const renderer = new three.WebGLRenderer();
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
+const container = document.getElementById("three-container");
+
+renderer.setSize(container.clientWidth, container.clientHeight);
+const camera = new three.PerspectiveCamera(75, container.clientWidth / container.clientHeight, 0.1, 10000);
+container.appendChild(renderer.domElement);
 
 
 // City
@@ -35,7 +37,7 @@ scene.add(ambientLight);
 
 // Camera Controls
 const controls = new OrbitControls(camera, renderer.domElement);
-camera.position.set(0, 2, 5);
+camera.position.set(0, 2, 4);
 controls.target.set(0.5, -0.5, 0);
 controls.autoRotate = true;
 controls.autoRotateSpeed = 0.75;
