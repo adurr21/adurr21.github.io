@@ -50,3 +50,16 @@ renderer.setAnimationLoop(() => {
     controls.update();
     renderer.render(scene, camera);
 })
+
+// If the browser window is resized, the renderer and camera are updated to maintain
+// the page.
+function onWindowResize() {
+    renderer.setSize(container.clientWidth, container.clientHeight);
+
+    camera.aspect = container.clientWidth / container.clientHeight;
+
+    camera.updateProjectionMatrix();
+}
+
+// Add the onWindowResize() as an event listener for page resize.
+window.addEventListener('resize', onWindowResize, false);
