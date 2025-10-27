@@ -7,16 +7,26 @@
 </head>
 <body>
     <div id="main">
-    <div id="intro">
-        <div id="navbar" class="flex justify-between m-5">
-            <h1 class="text-2xl">Austin Durr</h1>
-            <div class="navbar-buttons">
-                <button class="btn btn-blue">Home</button>
+        <div id="intro" class="flex flex-col">
+            <div id="navbar" class="flex justify-between mt-5 mb-5 ml-10 mr-10">
+                <h1 class="text-2xl">Austin Durr</h1>
+                <div class="navbar-buttons space-x-2">
+                    <button class="btn btn-blue">Home</button>
+                    <button class="btn btn-blue">Projects</button>
+                    <button class="btn btn-blue">Contact</button>
+                    <button class="btn btn-red">Resume</button>
+                </div>
+            </div>
+            <div id="three-container"></div>
+            <div id="intro-text" class="flex flex-col flex-wrap justify-center items-center">
+                <h2 class="text-center mt-10 text-6xl">Hi, I'm Austin</h3>
+                    <h3 class="text-center">I'm a Software Engineer</h3>
+                    <h3 class="text-center">Passionate in Developing Software</h3>
+                    <p class="text-center">I am always looking for new opportunities to learn and grow. Check out my Resume and connect with me on LinkedIn.</p>
+                    <button class="btn btn-blue grow-0 w-50">Connect with me</button>
+                </div>
             </div>
         </div>
-        <div id="three-container"></div>
-    </div>
-    </div>
-    <script type="module" src="/three.js"></script>
-</body>
-</html>
+        <script type="module" src="/three.js"></script>
+    </body>
+    </html>
