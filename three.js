@@ -41,6 +41,7 @@ camera.position.set(0, 2, 4);
 controls.target.set(0.5, -0.5, 0);
 controls.autoRotate = true;
 controls.autoRotateSpeed = 0.75;
+controls.enableZoom = false;
 
 directionalLight.position.set(0, 2, 5)
 
