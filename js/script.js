@@ -48,20 +48,13 @@ function switchTheme(e) {
 // Save user preference on load
 
 const currentTheme = localStorage.getItem("theme")
-  ? localStorage.getItem("theme")
-  : null;
+? localStorage.getItem("theme")
+: null;
 
 if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
-
+  
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
   }
 }
-
-//Adding date
-
-let myDate = document.querySelector("#datee");
-
-const yes = new Date().getFullYear();
-myDate.innerHTML = yes;
