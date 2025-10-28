@@ -186,7 +186,14 @@ body {
 }
 
 .card .project-bio h3 {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.project-bio .skills {
+  font-style: italic;
+  margin-bottom: 5px;
 }
 
 .project-info {
@@ -202,7 +209,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  top: 160px;
+  top: 100px;
   left: 10px;
 }
 

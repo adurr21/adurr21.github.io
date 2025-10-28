@@ -1,0 +1,256 @@
+/* General Styles */
+body {
+    margin: 0;
+}
+
+/* Nav Styles */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    background-color: #D3D0CB;
+}
+
+nav a {
+    text-decoration: none;
+    color: #393E41;
+}
+
+nav a:hover {
+    color: #587B7F;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.15em;
+    gap: 10px;
+    margin-top: 15px;
+    background-color: #D3D0CB;
+}
+
+footer a {
+    text-decoration: none;
+    color: #393E41
+}
+
+footer a:hover {
+    color: #587B7F;
+}
+
+footer svg {
+    width: 40px;
+}
+
+/* Splash Section */
+.splash {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.left-splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 50px 0;
+}
+
+.right-splash {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+}
+
+.splash h1 {
+    font-family: "Quicksand", sans-serif;
+    font-size: 2em;
+    color: #393E41;
+}
+
+.splash img {
+    border-radius: 25%;
+    border: 3px solid black;
+    width: 350px;
+}
+
+.splash p {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+/* Horizontal Rules */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* Sections */
+.about section {
+    border: 1px solid grey;
+}
+
+/* Section Headings */
+section h2 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #393E41;
+    font-size: 1.8em;
+}
+
+/* Paragraph Styles */
+section p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1em;
+}
+
+#school-name {
+    font-family: "Funnel Display", sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.honors {
+    text-align: center;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, .3fr));
+    font-family: "Roboto", sans-serif;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+
+/* link styles */
+section a {
+    color: #587B7F;
+    text-decoration: none;
+}
+section a:hover {
+    color: #E2C044;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+/* List Styles */
+ul {
+    list-style-position: inside;
+    list-style-type: square;
+    font-size: 1.1em;
+    padding-left: 0;
+}
+li {
+    margin: 10px 0;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.1em;
+    align-items: center;
+    gap: 10px;
+}
+dl dt{
+    text-align: center;
+}
+dl dd{
+    text-align: center;
+}
+
+/* Project Section */
+.three-col {
+    display: grid;
+    grid-template-columns: minmax(250px, 500px) minmax(250px, 500px) minmax(250px, 500px);
+    justify-content: center;
+    gap: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+    .three-col {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .card {
+        max-width: 500px;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: grey 10px 10px 20px;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+}
+
+.card img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.card h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Contact Page Styles */
+.one-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactMain {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+form input, form textarea {
+    width: 25%;
+    margin: 10px 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+form label {
+    font-family: "Quicksand", sans-serif;
+}
+
+form input:focus, form textarea:focus {
+    box-shadow: grey 10px 10px 10px;
+}
+
+form button {
+    margin-top: 10px;
+    background-color: #587B7F;
+    color: white;
+    width: 150px;
+    font-family: "Quicksand", sans-serif;
+    
+}
+
+form button:hover {
+    background-color: #E2C044;
+    color: black;
+}
